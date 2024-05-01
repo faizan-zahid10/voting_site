@@ -70,12 +70,48 @@ nav {
 
 
 .cover{
-    background-color: aqua;
+    
+    background-color: blueviolet;
+    background-image: url(https://assets-global.website-files.com/5d9a902248623ef932d0da66/6282c893b9b3495c8d6dc73c_tilted-results-round3-bg.svg),url(https://assets-global.website-files.com/5d9a902248623ef932d0da66/5f8599c41d96063e26a5093f_diagonal-lines-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 760px auto;
+    background-position: 100% 5%, 10% 0;
+    padding:90px 5%;
+    display: flex;
+    /* height: 61vh; */
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 450px;
 }
 
-.cover img{
-    border-radius: 50px;
+
+
+
+
+
+.cover img {
+    border-radius: 10px;
+    box-shadow: 0 0 40px 5px rgba(0, 0, 0, .3);
+    position: relative;
+    top: 3%;
+    left: 27%;
+    /* float: right;/ */
+    max-width: 40%; /* Set initial max-width for responsiveness */
 }
+
+@media screen and (max-width: 980px) {
+    .cover img {
+        max-width: 30%; /* Adjust the max-width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cover img {
+        max-width: 20%; /* Adjust the max-width for even smaller screens */
+    }
+}
+
 
 
 @media screen and (max-width: 980px) {
@@ -113,4 +149,49 @@ nav {
     .hamburger-menu.show .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+
+.written_show {
+    position: absolute;
+    top: 50%;
+    left: 10%; /* Adjust this value to position it where you want */
+    transform: translateY(-50%);
+    color: white; /* Set the color to contrast with the background */
+    max-width: 40%; /* Adjust the width as needed */
+    padding: 20px;
+    z-index: 1; /* Ensure it's above the cover image */
+}
+
+.written_show h1{
+    font-size:40px;
+    font-family: sans-serif;
+    margin: 0% 0%;
+}
+
+.written_show h4{
+    margin: 4% 0%;
+    font-family: sans-serif;
+}
+
+.written_show p{
+    font-family: sans-serif;
+    font-size: medium;
+}
+
+.written_show button{
+    background-color: rgb(255, 183, 0);
+    color: white;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    border-radius: 20px;
+    white-space: nowrap;
+    font-size: small;
+    margin-top: 2%;
+}
+
+.written_show button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 183, 0, 0.806);
+
 }
