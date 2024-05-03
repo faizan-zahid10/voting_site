@@ -1,3 +1,4 @@
+/* css goes here */
 body {
     margin: 0;
     justify-content: center;
@@ -70,7 +71,6 @@ nav {
 }
 
 .cover {
-
     background-color: blueviolet;
     background-image: url(https://assets-global.website-files.com/5d9a902248623ef932d0da66/6282c893b9b3495c8d6dc73c_tilted-results-round3-bg.svg), url(https://assets-global.website-files.com/5d9a902248623ef932d0da66/5f8599c41d96063e26a5093f_diagonal-lines-bg.svg);
     background-repeat: no-repeat;

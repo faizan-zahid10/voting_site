@@ -1,9 +1,10 @@
+// for small devices, we go with hamburger
 function toggleMenu() {
     var otherOptions = document.querySelector('.otheroptions');
     otherOptions.classList.toggle('show');
 }
 
-
+// for feedbacks switching in accordance to butons
 let currentFeedbackIndex = 0; 
 const feedbackData = [
     {
